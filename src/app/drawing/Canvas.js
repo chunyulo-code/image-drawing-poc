@@ -50,8 +50,7 @@ const Canvas = ({ canvasRef, ctx, color }) => {
 
   return (
     <div
-      className="border border-white"
-      style={{ height: "500px" }}
+      className="border border-white overflow-hidden h-[500px]"
       onMouseDown={handleMouseDown}
       onMouseMove={handleMouseMove}
       onMouseUp={handleMouseUp}

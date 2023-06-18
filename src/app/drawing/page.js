@@ -6,7 +6,7 @@ import Canvas from "./Canvas";
 export default function page() {
   const canvasRef = useRef(null);
   const ctx = useRef(null);
-  const [color, setColor] = useState("#000000");
+  const [color, setColor] = useState("#42f0ed");
 
   const clearCanvas = () => {
     const canvas = canvasRef.current;
@@ -28,13 +28,13 @@ export default function page() {
         <div className="">
           <input
             type="button"
-            className=""
+            className="border border-red-400 rounded-md px-3 py-2 mt-5"
             value="clear canvas"
             onClick={clearCanvas}
           />
         </div>
       </div>
-      <div className="h-[500px]">
+      <div className="h-[500px] mt-5">
         <Canvas canvasRef={canvasRef} ctx={ctx} color={color} />
       </div>
     </div>
